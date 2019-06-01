@@ -23,6 +23,6 @@ class App < Sinatra::Base
     erb :'/medicines/show.html'
   end
   
-  get '/medicines/:id'
+  get '/mgoodbye/:name'
   end
 end
