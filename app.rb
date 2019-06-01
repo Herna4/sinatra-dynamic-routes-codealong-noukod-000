@@ -14,6 +14,9 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
+  
+  get '/medicines/:id'
+end
    # medicines_controller.rb
   # get '/medicines/:id' do
   #   @medicine = all_the_medicines.select do |medicine|
