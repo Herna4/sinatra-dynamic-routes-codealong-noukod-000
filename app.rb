@@ -15,13 +15,14 @@ class App < Sinatra::Base
 
   # Code your final two routes here:
   
-  # get '/medicines/:id'
-  # end
    # medicines_controller.rb
   get '/medicines/:id' do
     @medicine = all_the_medicines.select do |medicine|
       medicine.id == params[:id]
   end.first
     erb :'/medicines/show.html'
+  end
+  
+  get '/medicines/:id'
   end
 end
