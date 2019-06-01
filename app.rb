@@ -26,4 +26,6 @@ class App < Sinatra::Base
   get '/mgoodbye/:name'
     "Goodbye, (person's name)."
   end
+  
+  get '/multiply/:num1/:num2'
 end
